@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
 <title>Contractor</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body { margin:0; }  
 * {
   box-sizing:border-box;
 }
 html, body {
 height: 100%;
+margin: 0;
 }
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Bodoni MT;
+
 }
 
 .navbar {
   overflow: hidden;
-  background-color: white;
+  background-color: #041226;
   position: fixed;
   top: 0;
   width: 100%;
@@ -28,19 +32,24 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 20px 26px;
+  padding: 45px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
+  
 }
 
 .navbar a:hover {
-  background: white;
-  color: black;
+  background: #041226;
+  color: white;
 }
 
 .main {
+      padding-top: 40px; 
   padding: 16px;
   margin-top: 30px;
   margin: -20px;
@@ -48,36 +57,52 @@ body {
 .navbar-right {
   float: right;
 }
-.header1 {
- background-image: url(https://media.osram.info/media/img/osram-dam-4106056/s,x,1260,y,0/osramoper_1.png);
- height: 700px; 
- background-position: center; 
- background-repeat: no-repeat; 
- background-size: cover; 
- }
- .image-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  }
+    
+    .headerimg{
+      height: auto;
+        width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+        
+    }
+
    
- .logo {
+.logo {
 display: inline-block;
     vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: -25px;
-    margin-top: -15px; 
-     float: left;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
     }
-  .footer {
-  background-color: #F1F1F1;
-  text-align: center;
+ .footer {
+  background-color: #041226;
   padding: 2px;
 }
+  
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
 .container {
   padding: 20px;
 }
@@ -96,7 +121,7 @@ display: inline-block;
 }
 
 .containerTab {
-  padding: 100px;
+  padding: 10px;
   color: white;
 }
 
@@ -113,77 +138,234 @@ display: inline-block;
   color: white;
   font-size: 35px;
   cursor: pointer;
+    }
+    
+    .font1 {
+  font-family: "Didot";
+  font-style: normal;
+  font-size: 16px;
+  color: #041226;
+   
+    }    
+    
+       
+nav dropdown {
+  display: none;   
+}
+
+
+    .logosmall {
+        width 100px;
+        height: 40px;
+        display: none;
+        vertical-align: middle;
+        margin-right: -20px;
+        margin-top: -35px; 
+        float: left;
+    }
+    .footertextlang {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 5px;
+        font-family: "Didot";
+        letter-spacing: 0px;
+        font-size: 10px;
+        color: white;   
+        text-decoration: none;
+        display: none;
+    }
+    a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+    @media (max-width: 960px) {
+  nav list     { display: none; }
+  nav dropdown { display: block; }
+  nav dropdown1 { display: block; } 
+        .navbar {
+        }
+        .navbar a {
+            padding-bottom: 10px;
+
+  }
+        .logosmall {display: block;}
+        .footertext {margin-left: 0px; letter-spacing: 0px;
+        font-size: 10px;
+        }
+        .footertext1 {display: none;}
+        .footertextlang {display: block;}
+        .column {
+            width: 100%;
+            padding: 100px;
+        }
+    }
+    .dropbtn {
+  background-color: #041226;
+  color: #f6c363;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+    button:focus {outline:0;}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #041226;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+   width: 100%;
+  left: 0;
+}
+
+.show {display: block;}
+ #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #041226;
+  color: #fda016;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+#myBtn:hover {
+  background-color: #fda016;
+    color: #041226
 }
 </style>
+</head>
 <body>
-<div class="navbar">
-<a href="main.html"><img class="logo" src="logo1.jpg"></a>
-    <a href="about.html">About</a>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="navbar">
+    <nav> 
+        <list>
+<a href="main.html"><img class="logo" src="Images/logo.jpg"></a>
+    <a href="complex.html">Complex</a>
     <a href="montenegro.html">Montenegro</a>
-    <a href="contractor.html">Contractor</a>
     <a href="location.html">Location</a>
     <a href="health.html">Health</a>
-    <a href="contactus.html">Contact Us</a>
+    <a href="contractor.html">Contractor</a> 
     <div class= "navbar-right">
-     <a href="main.html">EN</a>
-    <a href="main.html">MNE</a>
-    <a href="main.html">RU</a>
+     <a href="contractor.html">EN</a>
+    <a href="contractorMNE.html">MNE</a>
+    <a href="contractorRU.html">RU</a>
  </div>
-</div>
+            
+</list>
+     
+        <dropdown>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+     <a href="complex.html">Complex</a>
+    <a href="montenegro.html">Montenegro</a>
+    <a href="location.html">Location</a>
+    <a href="health.html">Health</a>
+    <a href="contractor.html">Contractor</a>
+        </div>
+            </div>
+             </dropdown>
+     
+     <a href="main.html"><img class="logosmall" src="Images/logosmall.png"></a>     
     
+    </nav>
+  
+    </div>
 <div class="main">
-<div class="header1">
-<div class="image-text">
-<h1>Villdor</h1>
- </div>
-</div>
+<img class="headerimg" src="Images/interior5.JPG">
+   </div>
     <div class="container">
-<p>Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...</p>
+<p class="font1">VILLDOR OOO from Moscow was founded in 2007.
+The main activity is construction work, primarily interior design and carpentry on the facades of stained glass, windows and doors. The daughter company in Montenegro, villldor d.o.o., represents the realtor for the IGALO GARDEN complex and will be the contractor on this project.
+Our partners in Russia are private investors, architectural bureaus <a href="http://totan.ru/"> (totan.ru) </a> and famous artists <a href="www.jurikuper.com"> (jurikuper.com) </a>
+    The interior is made in the factory Bobic Yacht Interior <a href="https://www.bobic.eu/"> (bobic.eu) </a> from Slovenia. <br> Press on the images to view more photos of each category. </p>
     <!-- Three columns -->
 <div class="row">
-  <div class="column" onclick="openTab('b1');" style="background-image: url(https://design-milk.com/images/2017/03/Roundup-CoolBuildings-1-VM-Houses-BIG-JDS.jpg)">
-    Theatre
+  <div class="column" onclick="openTab('b1');" style="background-image: url(Images/interiormain.JPG)" height="auto">
+    Interiors
   </div>
-  <div class="column" onclick="openTab('b2');" style="background-image: url(https://saltandwater.rs/wp-content/uploads/Fasada_cam003_NS.jpg)">
-    House
+  <div class="column" onclick="openTab('b2');" style="background-image: url(Images/facademain.jpg)" height="auto">
+    Facades
   </div>
-  <div class="column" onclick="openTab('b3');" style="background-image: url(https://static.wixstatic.com/media/dc7758_3c8cfc94cd2a4483bbf4488032d72000~mv2.jpg)">
-    Totan
+  <div class="column" onclick="openTab('b3');" style="background-image: url(Images/buildingmain.JPG)" height="auto">
+    Buildings
   </div>
 </div>
  <!-- Full-width columns: (hidden by default) -->
 <div id="b1" class="containerTab" style="display:none;background:black">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Theatre</h2>
-  <p>Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.</p>
-    <img src="https://neufert-cdn.archdaily.net/uploads/photo/image/199633/full_Quay_Tower-2-Island_Exteriors_Fabricators.jpg?v=1590549272" width="500" height="300">
-    <img src="https://inhabitat.com/wp-content/blogs.dir/1/files/2015/07/Henning-Larsen-Syddansk-Universitet-communications-and-design-building-2.jpg" width="500" height="300">
+  <h2>Interiors</h2>
+    <img src="Images/interior1.jpg" width="400" height="300">
+    <img src="Images/interior2.jpg" width="400" height="300">
+     <img src="Images/interior3.jpg" width="400" height="300">
+       <img src="Images/interior4.jpg" width="400" height="300">
+    <img src="Images/interior7.jpg" width="400" height="300">
+     <img src="Images/interior6.jpg" width="400" height="300">
 </div>
 
 <div id="b2" class="containerTab" style="display:none;background:black">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>House</h2>
-  <p>Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.</p>
-    <img src="https://seele.com/fileadmin/_processed_/3/1/csm_Apple-Store_Union-Square_c1ca78bd48.jpg" width="500" height="300">
-    <img src="https://www.parklex.com/wp-content/uploads/2015/11/WoodviewMews-GeraghtyTaylorArchitects-London-UK-2015-Parklex-Facade-Gold-02.jpg" width="500" height="300">
+  <h2>Facades</h2>
+  <img src="Images/facade1.jpg" width="400" height="300">
+    <img src="Images/facade2.jpg" width="400" height="300">
+     <img src="Images/facade3.JPG" width="400" height="300">
+    <img src="Images/facade4.jpg" width="400" height="300">
+    <img src="Images/facade5.jpg" width="400" height="300">
+     <img src="Images/facade6.jpg" width="400" height="300">
+    
 </div>
 
 <div id="b3" class="containerTab" style="display:none;background:black">
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-  <h2>Totan</h2>
-  <p>Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.Some kind of description about the porject and stuff done with maybe a link.Find out more on <a href="http://totan.ru/">their website</a></p>
-    <img src="http://totan.ru/wp-content/uploads/2013/10/makalunfp2.jpg" width="500" height="300">
-    <img src="http://totan.ru/wp-content/uploads/2014/07/dsc_09191.jpg" width="500" height="300">
+  <h2>Buildings</h2>
+  <img src="Images/building1zoomed.jpg" width="400" height="300">
+    <img src="Images/building2.jpg" width="400" height="300">
+     <img src="Images/building3zoomed.jpg" width="400" height="300">
 </div>
 
 
 
    
     </div>
-     </div>
-    <div class="footer">
-  <p>Igalo Gardens 2020</p>
-</div>
+
+<div class="footer">
+      <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div class="footertextlang">
+        <a href="contractor.html">EN</a> |
+        <a href="contractorMNE.html">MNE</a> |
+        <a href="contractorRU.html">RU</a>
+    </div>
+    <div style="clear: both"></div>
+    </div>
+
+
     <script>
 function openTab(tabName) {
   var i, x;
@@ -193,7 +375,47 @@ function openTab(tabName) {
   }
   document.getElementById(tabName).style.display = "block";
 }
+       
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
 </script>
+
     </body>
     </head>
 </html>

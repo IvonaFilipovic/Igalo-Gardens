@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<title>Contractor RU</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing:border-box;
+}
+html, body {
+height: 100%;
+margin: 0;
+}
+body {
+    margin: 0;
+    font-family: Bodoni MT;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #041226;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 45px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
+  
+}
+
+.navbar a:hover {
+  background: #041226;
+  color: white;
+}
+
+.main {
+      padding-top: 40px; 
+  padding: 16px;
+  margin-top: 30px;
+  margin: -20px;
+}
+.navbar-right {
+  float: right;
+}
+    
+    .headerimg{
+      height: auto;
+        width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+        
+    }
+
+   
+.logo {
+display: inline-block;
+    vertical-align: top;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
+    }
+ .footer {
+  background-color: #041226;
+  padding: 2px;
+}
+  
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
+.container {
+  padding: 20px;
+}
+    /* The grid: Three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+ background-position: center; 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+}
+
+.containerTab {
+  padding: 10px;
+  color: white;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Closable button inside the container tab */
+.closebtn {
+  float: right;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+    }
+    
+    .font1 {
+  font-family: "Didot";
+  font-style: normal;
+  font-size: 16px;
+  color: #041226;
+   
+    }    
+    
+       
+nav dropdown {
+  display: none;   
+}
+
+
+    .logosmall {
+        width 100px;
+        height: 40px;
+        display: none;
+        vertical-align: middle;
+        margin-right: -20px;
+        margin-top: -35px; 
+        float: left;
+    }
+    .footertextlang {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 5px;
+        font-family: "Didot";
+        letter-spacing: 0px;
+        font-size: 10px;
+        color: white;   
+        text-decoration: none;
+        display: none;
+    }
+    a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+    @media (max-width: 960px) {
+  nav list     { display: none; }
+  nav dropdown { display: block; }
+  nav dropdown1 { display: block; } 
+        .navbar {
+        }
+        .navbar a {
+            padding-bottom: 10px;
+
+  }
+        .logosmall {display: block;}
+        .footertext {margin-left: 0px; letter-spacing: 0px;
+        font-size: 10px;
+        }
+        .footertext1 {display: none;}
+        .footertextlang {display: block;}
+        .column {
+            width: 100%;
+            padding: 100px;
+        }
+    }
+    .dropbtn {
+  background-color: #041226;
+  color: #f6c363;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+    button:focus {outline:0;}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #041226;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+   width: 100%;
+  left: 0;
+}
+
+.show {display: block;}
+</style>
+<body>
+    <div class="navbar">
+    <nav> 
+        <list>
+<a href="mainRU.html"><img class="logo" src="Images/logo.jpg"></a>
+    <a href="complexRU.html">Complex</a>
+    <a href="montenegroRU.html">Montenegro</a>
+    <a href="contractorRU.html">Contractor</a>
+    <a href="locationRU.html">Location</a>
+    <a href="healthRU.html">Health</a>
+    <div class= "navbar-right">
+     <a href="contractor.html">EN</a>
+    <a href="contractorMNE.html">MNE</a>
+    <a href="contractorRU.html">RU</a>
+ </div>
+            
+</list>
+     
+        <dropdown>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+     <a href="complexRU.html">Complex</a>
+    <a href="montenegroRU.html">Montenegro</a>
+    <a href="contractorRU.html">Contractor</a>
+    <a href="locationRU.html">Location</a>
+    <a href="healthRU.html">Health</a>
+        </div>
+            </div>
+             </dropdown>
+     
+     <a href="mainRU.html"><img class="logosmall" src="Images/logosmall.png"></a>     
+    
+    </nav>
+  
+    </div>
+<div class="main">
+<img class="headerimg" src="Images/interior5.JPG">
+   </div>
+    <div class="container">
+<p class="font1">VILLDOR OOO from Moscow was founded in 2007.
+The main activity is construction work, primarily interior design and carpentry on the facades of stained glass, windows and doors. The daughter company in Montenegro, villldor d.o.o., represents the realtor for the IGALO GARDEN complex and will be the contractor on this project.
+Our partners in Russia are private investors, architectural bureaus <a href="http://totan.ru/"> (totan.ru) </a> and famous artists <a href="www.jurikuper.com"> (jurikuper.com) </a>
+    The interior is made in the factory Bobic Yacht Interior <a href="https://www.bobic.eu/"> (bobic.eu) </a> from Slovenia. <br> Press on the images to view more photos of each category. </p>
+    <!-- Three columns -->
+<div class="row">
+  <div class="column" onclick="openTab('b1');" style="background-image: url(Images/interiormain.JPG)" height="auto">
+    Interiors
+  </div>
+  <div class="column" onclick="openTab('b2');" style="background-image: url(Images/facademain.jpg)" height="auto">
+    Facades
+  </div>
+  <div class="column" onclick="openTab('b3');" style="background-image: url(Images/buildingmain.JPG)" height="auto">
+    Buildings
+  </div>
+</div>
+ <!-- Full-width columns: (hidden by default) -->
+<div id="b1" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Interiors</h2>
+    <img src="Images/interior1.jpg" width="400" height="300">
+    <img src="Images/interior2.jpg" width="400" height="300">
+     <img src="Images/interior3.jpg" width="400" height="300">
+       <img src="Images/interior4.jpg" width="400" height="300">
+    <img src="Images/interior7.jpg" width="400" height="300">
+     <img src="Images/interior6.jpg" width="400" height="300">
+</div>
+
+<div id="b2" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Facades</h2>
+  <img src="Images/facade1.jpg" width="400" height="300">
+    <img src="Images/facade2.jpg" width="400" height="300">
+     <img src="Images/facade3.JPG" width="400" height="300">
+    <img src="Images/facade4.jpg" width="400" height="300">
+    <img src="Images/facade5.jpg" width="400" height="300">
+     <img src="Images/facade6.jpg" width="400" height="300">
+    
+</div>
+
+<div id="b3" class="containerTab" style="display:none;background:black">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <h2>Buildings</h2>
+  <img src="Images/building1zoomed.jpg" width="400" height="300">
+    <img src="Images/building2.jpg" width="400" height="300">
+     <img src="Images/building3zoomed.jpg" width="400" height="300">
+</div>
+
+
+
+   
+    </div>
+
+<div class="footer">
+      <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div class="footertextlang">
+        <a href="contractor.html">EN</a> |
+        <a href="contractorMNE.html">MNE</a> |
+        <a href="contractorRU.html">RU</a>
+    </div>
+    <div style="clear: both"></div>
+    </div>
+
+
+    <script>
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+       
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+    </body>
+    </head>
+</html>

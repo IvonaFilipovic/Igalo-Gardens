@@ -4,14 +4,14 @@
 <title>Igalo Gardens</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-body { margin:0; }  
 * {
   box-sizing:border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Bodoni MT;
+
 }
 .container {
   padding: 64px;
@@ -37,25 +37,29 @@ body {
 
 .large-font {
   font-size: 48px;
+  color: #041226;
+  font-family: "Didot";
 }
 
-.xlarge-font {
-  font-size: 64px
+.large-font1 {
+  font-size: 48px;
+  color: #f6c363;
+  font-family: "Didot";
 }
 
 .button {
   border: none;
-  color: white;
+  color: #f6c363;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #4CAF50;
-}
-
-
+  background-color: #041226;
+  font-family: "Didot";
+    }
+    
 .navbar {
   overflow: hidden;
-  background-color: white;
+  background-color: #041226;
   position: fixed;
   top: 0;
   width: 100%;
@@ -66,16 +70,20 @@ body {
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 20px 26px;
+  padding: 45px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
+  
 }
 
 .navbar a:hover {
-  background: white;
-  color: black;
+  background: #041226;
+  color: white;
 }
 
 .main {
@@ -86,70 +94,348 @@ body {
 .navbar-right {
   float: right;
 }
-.header1 {
- background-image: url(montenegro1.jpg);
- height: 700px; 
- background-position: center; 
- background-repeat: no-repeat; 
- background-size: cover; 
- }
+.headerimg{
+      height: auto;
+        width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+        
+    }
  .image-text {
-  text-align: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  }
+  top: 30%;
+  left: 5%;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: #041226;
+
    
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+}
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+      
  .logo {
 display: inline-block;
     vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: -25px;
-    margin-top: -15px; 
-     float: left;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
     }
  .footer {
-  background-color: #F1F1F1;
-  text-align: center;
+  background-color: #041226;
   padding: 2px;
 }
-     
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        line-height: normal;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        line-height: normal;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
+  
+    h2
+{
+line-height: 5px;
+}
+       h1
+{
+line-height: 15px;
+   
+}
+    
+.maintext{
+    font-family: "Montserrat",sans-serif;
+    font-style: normal;
+    color: #9b9b9b;    
+    }
+    
+#tag {
+       font-family: "Montserrat",sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+       position: relative;
+    }    
+        @media screen and (max-width: 500px) {
+       .navbar a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+        .navbar-right {
+            float: none;
+        }
+    }
+    
+    nav dropdown {
+  display: none;   
+}
+
+
+    .logosmall {
+        width 100px;
+        height: 40px;
+        display: none;
+        vertical-align: middle;
+        margin-right: -20px;
+        margin-top: -35px; 
+        float: left;
+    }
+    .footertextlang {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 5px;
+        font-family: "Didot";
+        letter-spacing: 0px;
+        font-size: 10px;
+        color: white;   
+        text-decoration: none;
+        display: none;
+    }
+    a {
+  color: inherit;
+  text-decoration: inherit;
+}
+    
+
+    
+        @media (max-width: 960px) {
+  nav list     { display: none; }
+  nav dropdown { display: block; }
+  nav dropdown1 { display: block; } 
+        .navbar {
+        }
+        .navbar a {
+            padding-bottom: 10px;
+
+  }
+        .logosmall {display: block;}
+        .footertext {margin-left: 0px; letter-spacing: 0px;
+        font-size: 10px;
+        }
+        .footertext1 {display: none;}
+        .footertextlang {display: block;}
+        .column {
+            width: 100%;
+            padding: 100px;
+        }
+            .image-text {
+                top: 20%;
+                font-size: 3vw;
+    }
+            #tag {
+                font-size: 2vw;
+                
+            }
+        .column-55 { width: 100%;
+         text-align: center;
+            }
+            .column-45 {
+           width: 100%;
+            }
+            .large-font {
+  font-size: 8vw;
+                line-height: 20px;
+}
+
+.large-font1 {
+  font-size: 8vw;
+ 
+}     
+            
+    }
+    .dropbtn {
+  background-color: #041226;
+  color: #f6c363;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+    button:focus {outline:0;}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: #041226;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+   width: 100%;
+  left: 0;
+}
+
+.show {display: block;}
+#cookieMessage {
+   z-index: 999;
+    min-height: 20px;
+    font-family: OpenSans, arial, "sans-serif";
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.6);
+    overflow: hidden;
+    position: fixed;
+    color: #FFF;
+    bottom: 0px;
+    right: 0px;
+    left: 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+    #cookieMessage div {
+    padding: 5px 0 0;
+}
+#cookieMessage a {
+    color: #ffba55;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#cookieMessage a:hover {
+	color: #fda016;
+}
+ 
+#cookieMessage a#cookieButton {
+    display: inline-block;
+    color: #000000;
+    font-size: 1.1em;
+	background: #ffba55;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 2px 20px;
+    float: right;
+    border-radius: 20px;
+}
+
+#cookieMessage a#cookieButton:hover {
+    background: #fda016;
+	color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  z-index: 99;
+  font-size: 12px;
+  border: none;
+  outline: none;
+  background-color: #041226;
+  color: #fda016;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+#myBtn:hover {
+  background-color: #fda016;
+    color: #041226
+}
 </style>
 </head>
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 <div class="navbar">
-<a href="main.html"><img class="logo" src="logo1.jpg"></a>
-    <a href="about.html">About</a>
+    <nav> 
+        <list>
+<a href="main.html"><img class="logo" src="Images/logo.jpg"></a>
+    <a href="complex.html">Complex</a>
     <a href="montenegro.html">Montenegro</a>
-    <a href="contractor.html">Contractor</a>
     <a href="location.html">Location</a>
     <a href="health.html">Health</a>
-    <a href="contactus.html">Contact Us</a>
+    <a href="contractor.html">Contractor</a>
     <div class= "navbar-right">
      <a href="main.html">EN</a>
-    <a href="main.html">MNE</a>
-    <a href="main.html">RU</a>
+    <a href="mainMNE.html">MNE</a>
+    <a href="mainRU.html">RU</a>
  </div>
-</div>
+            
+</list>
+     
+        <dropdown>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Menu</button>
+  <div id="myDropdown" class="dropdown-content">
+     <a href="complex.html">Complex</a>
+    <a href="montenegro.html">Montenegro</a>
+    <a href="location.html">Location</a>
+    <a href="health.html">Health</a>
+    <a href="contractor.html">Contractor</a>
+
+        </div>
+            </div>
+             </dropdown>
+     
+     <a href="main.html"><img class="logosmall" src="Images/logosmall.png"></a>     
+    
+    </nav>
+  
+    </div>
 
 <div class="main">
-<div class="header1">
+<img class="headerimg" src="Images/naslovna-01.jpg">
 <div class="image-text">
 <h1>Igalo Gardens</h1>
+    
+    <h2 id="tag">Where your Health Matters</h2>
+    
  </div>
 </div>
-    <!-- The About Section -->
+    <!-- The Complex Section -->
 <div class="container">
   <div class="row">
     <div class="column-55">
-      <h1 class="xlarge-font"style="color:SkyBlue;"><b>About</b></h1>
-      <p><span style="font-size:36px">Within the complex</span>there are many arranged walking paths, parks with greenery and rest places, as well as a children's playground. There are also 7 more swimming pools, including 1 for children. To the left of the complex, a panoramic lift is planned to reach the highest point of the complex. In order to reduce exhaust emissions, transport within the complex, as well as to the beach, will take place by electric cars. The complex would lease a part of the beach in front of the Simo Milosevic Institute, and for its guests would also provide its own transportation to the most beautiful beaches on Zanjac and Miriste.</p>
-<a href="about.html"><button class="button" style="background-color:skyblue">See More</button></a>    </div>
+      <h1 class="large-font"><b>About the</b></h1>
+      <h2 class="large-font1"><b>Complex</b></h2><p class="maintext">The IGALO GARDENS  COMPLEX is planning to present the local environment in its finest light by planting palm trees, subtropical plants and other Mediterranean vegetation. Within the complex there are many arranged walking paths, parks with greenery and rest places, as well as a children's playground. There are also 7 more swimming pools, including 1 for children. To the left of the complex, a panoramic lift is planned to reach the highest point of the complex. In order to reduce exhaust emissions, transport within the complex, as well as to the beach, will take place by electric cars. The complex would lease a part of the beach in front of the Simo Milosevic Institute, and for its guests would also provide its own transportation to the most beautiful beaches on Zanjac and Miriste.</p>
+<a href="complex.html"><button class="button">Read More</button></a>    </div>
     <div class="column-45">
-        <img src="project2.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+        <img src="Images/Igalo%20gardens%20view%203.jpg" width="450" height="471" style="max-width:100%;height:auto;">
     </div>
   </div>
 </div>
@@ -158,58 +444,107 @@ display: inline-block;
 <div class="container" style="background-color:#f1f1f1">
   <div class="row">
     <div class="column-45">
-      <img src="montenegro.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+      <img src="Images/monte.jpg" width="450" height="471" style="max-width:100%;height:auto;">
     </div>
     <div class="column-55">
-      <h1 class="xlarge-font"style="color:Blue;"><b>Montenegro</b></h1>
-      <p><span style="font-size:24px">Montenegro</span> is a Balkan country with rugged mountains, medieval villages and a narrow strip of beaches along its Adriatic coastline. The Bay of Kotor, resembling a fjord, is dotted with coastal churches and fortified towns such as Kotor and Herceg Novi. Durmitor National Park, home to bears and wolves, encompasses limestone peaks, glacial lakes and 1,300m-deep Tara River Canyon.</p>
-<a href="montenegro.html"><button class="button" style="background-color:blue">Read More</button></a>    </div>
-  </div>
-</div>
-
-<!-- The Contractor Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-55">
-      <h1 class="xlarge-font"style="color:MediumSeaGreen;"><b>Contractor</b></h1>
-      <p><span style="font-size:36px">Villdor</span>is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...Villdor is a company that...</p>
-      <a href="contractor.html"><button class="button" style="background-color:green">Find out More</button></a>
-
-    </div>
-    <div class="column-45">
-        <img src="http://totan.ru/wp-content/uploads/2013/10/makalunfp2.jpg" width="450" height="471" style="max-width:100%;height:auto;">
-    </div>
+      <h1 class="large-font"><b>Welcome to</b></h1>
+      <h2 class="large-font1"><b>Montenegro</b></h2><p class="maintext">AN UP-AND-COMING YACHTING PARADISE, this fascinating country rewards travellers with charming towns, challenging hiking paths, deep rafting canyons and smooth fords. A high number of sunny days in summer and deep snowfall in winter determine the two most developed forms of tourism in Montenegro: the coastal direction in summer and recreational routes during the winter. There are several mountain resorts here which offer visitors a great many opportunities for adventure, whether it be the slopes or cross-country skiing, snowboarding, mountain biking, hiking, riding a ski-doo or snowshoeing.</p>
+<a href="montenegro.html"><button class="button"> Read More</button></a>    </div>
   </div>
 </div>
 <!-- Location Section -->
 <div class="container" style="background-color:#f1f1f1">
   <div class="row">
-    <div class="column-45">
-      <img src="locationigalo.jpg" width="450" height="471" style="max-width:100%;height:auto;">
-    </div>
     <div class="column-55">
-      <h1 class="xlarge-font"style="color:Blue;"><b>Location</b></h1>
-      <p><span style="font-size:24px">Located</span> in Igalo, next to Herceg Novi. It is 6 km from the Croatian border, 26 km from Cilipi airport and 40 km from Dubrovnik. 28 km south, there is Tivat Airport. The whole complex is located on a hill called Osmanova Glavica. It is about 450 m away from the sea. The access road (street II of the Dalmatian Brigade) is separated from the highway at the gas station. </p>
-<a href="location.html"><button class="button" style="background-color:blue">Read More</button></a>    </div>
+      <h1 class="large-font"><b>Our convenient</b></h1>
+      <h2 class="large-font1"><b> Location</b></h2><p class="maintext">IGALO IS LOCATED IN A UNIQUE CLIMATE ZONE, where 2 air streams meet and combine, both Mediterranean and subtropical. The summers are warm, with over 200 sunny days in a year, and the winters are typically dry, a fact which contributes to an average temperature of 16.2°C. Thanks to the uniqueness of the climate, it is expected that a special programme of Thalassotherapy will be introduced, with its ample applications for treating chronic rheumatic problems, respiratory illnesses and cardiovascular disease, as well as skin conditions.</p>
+<a href="location.html"><button class="button">Read More</button></a>  
+      </div>
+      <div class="column-45">
+      <img src="Images/montenegro1.jpg" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
   </div>
 </div>
     <!-- The Health Section -->
 <div class="container">
   <div class="row">
-    <div class="column-55">
-      <h1 class="xlarge-font"style="color:MediumSeaGreen;"><b>Health</b></h1>
-      <p><span style="font-size:36px">Institut Simo Milosevic</span>The Institute for Physical Medicine, Rehabilitatiton and Rheumatology „Dr Simo Milosevic“ JSC Igalo is considered to be one of the largest and most famous institutions for multidisciplinary spa treatment on the Balkans. It is a pioneer of the modern physical and preventive medicine, rehabilitation, thalassotherapy and wellness, and became one of the leading international centers for rehabilitation of children, adults and seniors.</p>
-      <a href="health.html"><button class="button" style="background-color:green">Find out More</button></a>
-
+      <div class="column-45">
+        <img src="Images/health1.jpg"width="450" height="471" style="max-width:100%;height:auto;">
     </div>
-    <div class="column-45">
-        <img src="https://www.bikingcroatia.com/images/content/uploads/img_1452.jpg"width="450" height="471" style="max-width:100%;height:auto;">
+    <div class="column-55">
+      <h1 class="large-font"><b>Improve your</b></h1>
+      <h2 class="large-font1"><b>Health</b></h2><p class="maintext">Igalo is known as a tourist resort, and thanks to the healing - sea mud, is the centre of health tourism in Montenegro. It is also known for its mineral water called Igaljka. Igalo is also known as an air spa. From Mount Orjen, winds blow and in Igalo they mix with the sea air. This kind of air has a beneficial effect on the human respiratory system. Due to the large number of sunny days and the mild climate, it is possible to enjoy Montenegro all year round. Spend time walking or cycling along the 7 km long coastline.</p>
+      <a href="health.html"><button class="button">Find out More</button></a>
     </div>
   </div>
 </div>
+    <!-- The Contractor Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-55">
+     <h1 class="large-font"><b>More on the</b></h1>
+      <h2 class="large-font1"><b>Contractor</b></h2><p class="maintext">Villdor OOO from Moscow was founded in 2007.
+The main activity is construction work, primarily interior design and carpentry on the facades of stained glass, windows and doors.</p>
+      <a href="contractor.html"><button class="button"> Find out More</button></a>
+
+    </div>
+    <div class="column-45">
+        <img src="Images/contractoricon.JPG" width="450" height="471" style="max-width:100%;height:auto;">
+    </div>
+  </div>
 </div>
 <div class="footer">
-  <p>Igalo Gardens 2020</p>
-</div>
+      <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div class="footertextlang">
+        <a href="complex.html">EN</a> |
+        <a href="complexMNE.html">MNE</a> |
+        <a href="complexRU.html">RU</a>
+    </div>
+    <div style="clear: both"></div>
+    </div>
+  <!-- <div id="cookieMessage" >
+  <a id="cookieButton" onclick="this.parentElement.style.display='none';"> Accept </a> 
+Igalo Gardens uses cookies to ensure we give you the best experience on our website.<a href="https://html-online.com/privacy-terms-and-conditions/">View our cookie policy</a></div> . -->
+
+    <script>
+        
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}     
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>

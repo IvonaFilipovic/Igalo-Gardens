@@ -77,7 +77,7 @@ input[type=reset]:hover {
  
 .navbar {
   overflow: hidden;
-  background-color: white;
+  background-color: #041226;
   position: fixed;
   top: 0;
   width: 100%;
@@ -88,16 +88,20 @@ input[type=reset]:hover {
 .navbar a {
   float: left;
   display: block;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 20px 26px;
+  padding: 45px 20px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 18px;
+  font-family: "Didot";
+  font-style: normal;
+  font-variant: normal;
+  
 }
 
 .navbar a:hover {
-  background: white;
-  color: black;
+  background: #041226;
+  color: white;
 }
 
 .main {
@@ -109,26 +113,45 @@ input[type=reset]:hover {
   float: right;
 }
     
- .logo {
+.logo {
 display: inline-block;
     vertical-align: top;
-    width: 50px;
-    height: 50px;
-    margin-right: -25px;
-    margin-top: -15px; 
-     float: left;
-    }  
-     .footer {
-  background-color: #F1F1F1;
-  text-align: center;
+    width: 200px;
+    height: 80px;
+    margin-right: -5px;
+    margin-top: -25px; 
+    float: left;
+    }
+ .footer {
+  background-color: #041226;
   padding: 2px;
 }
+    .footertext {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;      
+    }
+    .footertext1 {
+        float: right;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: "Didot";
+        letter-spacing: 2px;
+        font-size: 14px;
+        color: white;   
+    }
+      #link { color: white; }
+     #link {text-decoration: none;}
 </style>
 </head>
 <body>
 <div class="navbar">
-<a href="main.html"><img class="logo" src="logo1.jpg"></a>
-    <a href="about.html">About</a>
+<a href="main.html"><img class="logo" src="Images/logo.jpg"></a>
+    <a href="about.html">Complex</a>
     <a href="montenegro.html">Montenegro</a>
     <a href="contractor.html">Contractor</a>
     <a href="location.html">Location</a>
@@ -168,9 +191,11 @@ display: inline-block;
 </div>
    
 
- <div class="footer">
-  <p>Igalo Gardens 2020</p>
-</div>   
+<div class="footer">
+      <h2 class="footertext">Igalo Gardens    |    <a id="link" href="mailto:villdor@mail.ru">villdor@mail.ru</a>    |    +381616104827</h2>
+    <h2 class="footertext1">42°27'29.4"N 18°30'09.8"E </h2> 
+    <div style="clear: both"></div>
+    </div>   
     
     
 
